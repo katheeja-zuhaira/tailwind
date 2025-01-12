@@ -73,9 +73,11 @@
             <div class="mt-12">
                 <img src="assets/line.png" alt="divider">
             </div>
-            
+
             <div class="text-xs mt-10 ml-2 text-xs">
-            <p >shyam<br>In a coaching role,you ask the <br>questions and rely more on your <br>staff,who become the experts,to<br> provide the information<p>
+                <p>shyam<br>In a coaching role,you ask the <br>questions and rely more on your <br>staff,who become the
+                    experts,to<br> provide the information
+                <p>
             </div>
         </div>
         <div style="background-image: url('./assets/women.png');" class="w-1/2 mix-blend-multiply image">
@@ -99,7 +101,8 @@
             </div>
         </div>
     </section>
-    <!-- Featured Courses -->
+
+    <!-- best courses -->
     <section class="px-20 featured-courses" id="featured-courses">
         <img class="size-20" src="assets/ellipse.png" alt="ellipse">
         <h3 class="text-center text-5xl">Featured <span>Courses</span></h3><br>
@@ -109,72 +112,104 @@
             </div>
         </div>
         <div class="flex justify-center">
-            <button class="btn btn-2 gradient-bg">See more</button>
+            <button class="btn btn-2 gradient-bg">Explore now</button>
         </div>
     </section>
-    <div class="grad h-full">
-        
-   </div>
+
+    <section class="px-20 py-10 grad">
+        <div class="">
+            <h3 class="text-center text-white text-2xl">Why <span style="color: #083F9B;"> learn</span> with our
+                courses?</h3>
+            <p class="text-center mt-5 text-white text-xs">We are providing the best courses and top classes.And<br>
+                extradinery placement training.....</p>
+        </div>
+        <div class="flex justify-between px-40 mt-10">
+            <div class="size-24"><img src="assets/icon1.png" alt="icon1">
+                <h2 class="text-white text-center mt-4">01.Learn</h2>
+                <p class="text-center mt-2 text-white text-xs">Learn continually. There is always
+                    “one more thing”to learn.</p>
+            </div>
+            <img src="assets/divide.png" alt="">
+            <div class="size-24"><img src="assets/icon2.png" alt="icon2">
+                <h2 class="text-white mt-4">02.Graduate</h2>
+                <p class="text-center mt-2 text-white text-xs">Be bold,be courageous,be your best.</p>
+            </div>
+            <img src="assets/divide.png" alt="">
+            <div class="size-24"><img src="assets/icon4.png" alt="icon4">
+                <h2 class="text-white text-center mt-4">03.Work</h2>
+                <p class="text-center mt-2 text-white text-xs">Great companies are built in
+                    the office,with hard work put
+                    in by team.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mb-20 products-container">
+            <div id="courses-grid" class="grid grid-cols-6 gap-4">
+            </div>
+        </div>
+    </section>
+
     <script>
         const productsGrid = document.getElementById('products-grid');
         const data = [{
-  noOfStudentsEnrolled: 1957,
-  durationOfCourse: "1h 57mins",
-  title: "Motion Graphics: Create a Nice Typography Animation",
-  price: 499,
-  isActive: false,
-  image: "./assets/b1.png",
-},
-{
-  noOfStudentsEnrolled: 1957,
-  durationOfCourse: "2h 57mins",
-  title: "Education Software and PHP and JS System Script",
-  price: 599,
-  isActive: false,
-  image: "./assets/b2.png"
-},
-{
-  noOfStudentsEnrolled: 1957,
-  durationOfCourse: "2h 57mins",
-  title: "Education Software and PHP and JS System Script",
-  price: 599,
-  isActive: false,
-  image: "./assets/b3.png"
-},
-{
-  noOfStudentsEnrolled: 1957,
-  durationOfCourse: "2h 57mins",
-  title: "Education Software and PHP and JS System Script",
-  price: 599,
-  isActive: false,
-  image: "./assets/b4.png"
-},
-{
-  noOfStudentsEnrolled: 1957,
-  durationOfCourse: "2h 57mins",
-  title: "Education Software and PHP and JS System Script",
-  price: 599,
-  isActive: false,
-  image: "./assets/b5.png"
-},
-{
-  noOfStudentsEnrolled: 1957,
-  durationOfCourse: "2h 57mins",
-  title: "Education Software and PHP and JS System Script",
-  price: 599,
-  isActive: false,
-  image: "./assets/b6.png"
-}
-];
+            noOfStudentsEnrolled: 1957,
+            durationOfCourse: "1h 57mins",
+            title: "Motion Graphics: Create a Nice Typography Animation",
+            price: 499,
+            isActive: false,
+            image: "./assets/b1.png",
+        },
+        {
+            noOfStudentsEnrolled: 1957,
+            durationOfCourse: "2h 57mins",
+            title: "Education Software and PHP and JS System Script",
+            price: 599,
+            isActive: false,
+            image: "./assets/b2.png"
+        },
+        {
+            noOfStudentsEnrolled: 1957,
+            durationOfCourse: "2h 57mins",
+            title: "Education Software and PHP and JS System Script",
+            price: 599,
+            isActive: false,
+            image: "./assets/b3.png"
+        },
+        {
+            noOfStudentsEnrolled: 1957,
+            durationOfCourse: "2h 57mins",
+            title: "Education Software and PHP and JS System Script",
+            price: 599,
+            isActive: false,
+            image: "./assets/b4.png"
+        },
+        {
+            noOfStudentsEnrolled: 1957,
+            durationOfCourse: "2h 57mins",
+            title: "Education Software and PHP and JS System Script",
+            price: 599,
+            isActive: false,
+            image: "./assets/b5.png"
+        },
+        {
+            noOfStudentsEnrolled: 1957,
+            durationOfCourse: "2h 57mins",
+            title: "Education Software and PHP and JS System Script",
+            price: 599,
+            isActive: false,
+            image: "./assets/b6.png"
+        }
+        ];
 
-for (let x = 0; x < data.length; x++) {
-renderProducts(data[x]);
-}
+        for (let x = 0; x < data.length; x++) {
+            renderProducts(data[x]);
+        }
 
-function renderProducts(data = {}) {
-const div = document.createElement("div");
-div.setAttribute("class", "products-card");
-div.innerHTML = `<img class="w-full" src="${data.image}" />
+        function renderProducts(data = {}) {
+            const div = document.createElement("div");
+            div.setAttribute("class", "products-card");
+            div.innerHTML = `<img class="w-full" src="${data.image}" />
           <div class="content">
               <div class="flex justify-between mb-10">
                   <p>${data.noOfStudentsEnrolled} Students</p>
@@ -191,10 +226,56 @@ div.innerHTML = `<img class="w-full" src="${data.image}" />
                   </button>
               </div>
           </div>`;
-productsGrid.appendChild(div);
-}
-    </script>
+            productsGrid.appendChild(div);
+        }
+const coursesGrid = document.getElementById('courses-grid');
+const datas = [{
+            image: "./assets/digital.png",
+            course:"Digital marketing",
+            seets:25
+        },
+        {
+            image: "./assets/webdev.png",
+            course:"Web Development",
+            seets:16
+        },
+        {
+            image: "./assets/art.png",
+            course:"Art & Humanities",
+            seets:76
+        },
+        {
+            image: "./assets/personal.png",
+            course:"Personal Development",
+            seets:22
+        },
+        {
+            image: "./assets/it.png",
+            course:"IT and Software",
+            seets:110
+        },
+        {
+            image: "./assets/graphics.png",
+            course:"Graphic Design",
+            seets:85
+        }
+        
+    ];
+
+    for (let i = 0; i < data.length; i++) {
+            renderCourses(datas[i]);
+        }
+
+    function renderCourses(datas = {}) {
+            const div = document.createElement("div");
+            div.setAttribute("class", "products-card");
+            div.innerHTML = `<img class="w-full" src="${datas.image}" />`
+            
+            productsGrid.appendChild(div);
+        }
     
+    </script>
+
 </body>
 
 </html>
