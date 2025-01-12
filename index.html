@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask me identity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font-family: "Righteous", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- font-family: "Saira", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header id="header" class="flex px-10 header-container">
+        <div class="w-1/3 flex items-center">
+            <img class="h-full" src="./assets/logo.png" />
+        </div>
+        <div class="w-2/3 flex items-center justify-between">
+            <nav>
+                <ul class="flex gap-x-8">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Courses</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div class="flex">
+                <ul class="flex gap-x-4">
+                    <li>
+                        <img style="width: 30px;" src="./assets/cat.svg" />
+                    </li>
+                    <li>
+                        <img src="./assets/profile.svg" />
+                    </li>
+                    <li>
+                        <img src="./assets/search.svg" />
+                    </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <button class="h-full btn btn-1">Login</button>
+                <button class="h-full btn btn-2 gradient-bg">Signup</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" class="flex px-20 hero-section gradient-bg">
+        <div class="w-1/2 h-full flex flex-col content">
+            <p class="mb-5 font-thin">Successful coaches are visionaries</p>
+            <h1 class="mb-10  text-7xl">
+                Good <span>coaching</span> is good teaching & nothing else.
+            </h1>
+            <div class="flex gap-x-8 mb-10">
+                <button class="btn btn-3 px-10 w-auto">View Courses</button>
+                <button class="btn btn-1 w-auto" style="color: #FFFFFF;">Get Free Consultation</button>
+            </div>
+            <div class="search-input flex gap-x-4">
+                <input class="w-2/3" placeholder="What do you want to learn today?" />
+                <button class="w-1/3  btn btn-2 gradient-bg">Search</button>
+            </div>
+        </div>
+        <div style="display: flex;" class="mt-12 ml-12 text-xs">
+            <div class="mt-12">
+                <img src="assets/line.png" alt="divider">
+            </div>
+            
+            <div class="text-xs mt-10 ml-2 text-xs">
+            <p >shyam<br>In a coaching role,you ask the <br>questions and rely more on your <br>staff,who become the experts,to<br> provide the information<p>
+            </div>
+        </div>
+        <div style="background-image: url('./assets/women.png');" class="w-1/2 mix-blend-multiply image">
+        </div>
+        <div class="radial-blur blur-2xl"></div>
+    </section>
+    <!-- Podcasts section -->
+    <section id="podcast" class="podcast-container px-20 gradient-bg">
+        <div class="grid grid-cols-6 gap-3 h-full">
+            <div class="w-full brand-image" style="background-image: url('./assets/spotify.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/amazon.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/spotify.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/cisco.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/logitech.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/spotify.svg');">
+            </div>
+        </div>
+    </section>
+    <!-- Featured Courses -->
+    <section class="px-20 featured-courses" id="featured-courses">
+        <img class="size-20" src="assets/ellipse.png" alt="ellipse">
+        <h3 class="text-center text-5xl">Featured <span>Courses</span></h3><br>
+        <p class="px-20 text-center text-md uppercase mb-20">The feature courses are we invented our teaching part</p>
+        <div class="mb-20 products-container">
+            <div id="products-grid" class="grid grid-cols-3 gap-4">
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button class="btn btn-2 gradient-bg">See more</button>
+        </div>
+    </section>
+    <div class="grad h-full">
+        
+   </div>
+    <script>
+        const productsGrid = document.getElementById('products-grid');
+        const data = [{
+  noOfStudentsEnrolled: 1957,
+  durationOfCourse: "1h 57mins",
+  title: "Motion Graphics: Create a Nice Typography Animation",
+  price: 499,
+  isActive: false,
+  image: "./assets/b1.png",
+},
+{
+  noOfStudentsEnrolled: 1957,
+  durationOfCourse: "2h 57mins",
+  title: "Education Software and PHP and JS System Script",
+  price: 599,
+  isActive: false,
+  image: "./assets/b2.png"
+},
+{
+  noOfStudentsEnrolled: 1957,
+  durationOfCourse: "2h 57mins",
+  title: "Education Software and PHP and JS System Script",
+  price: 599,
+  isActive: false,
+  image: "./assets/b3.png"
+},
+{
+  noOfStudentsEnrolled: 1957,
+  durationOfCourse: "2h 57mins",
+  title: "Education Software and PHP and JS System Script",
+  price: 599,
+  isActive: false,
+  image: "./assets/b4.png"
+},
+{
+  noOfStudentsEnrolled: 1957,
+  durationOfCourse: "2h 57mins",
+  title: "Education Software and PHP and JS System Script",
+  price: 599,
+  isActive: false,
+  image: "./assets/b5.png"
+},
+{
+  noOfStudentsEnrolled: 1957,
+  durationOfCourse: "2h 57mins",
+  title: "Education Software and PHP and JS System Script",
+  price: 599,
+  isActive: false,
+  image: "./assets/b6.png"
+}
+];
+
+for (let x = 0; x < data.length; x++) {
+renderProducts(data[x]);
+}
+
+function renderProducts(data = {}) {
+const div = document.createElement("div");
+div.setAttribute("class", "products-card");
+div.innerHTML = `<img class="w-full" src="${data.image}" />
+          <div class="content">
+              <div class="flex justify-between mb-10">
+                  <p>${data.noOfStudentsEnrolled} Students</p>
+                  <p>${data.durationOfCourse}</p>
+              </div>
+              <h2 class="text-2xl mb-10">
+                  ${data.title}
+              </h2>
+              <div class="flex justify-between items-center">
+                  <p>Rs.${data.price}</p>
+                  <button class="flex items-center gap-x-2 btn">
+                      <img src="./assets/cart.png" />
+                      <span>Add To Cart</span>
+                  </button>
+              </div>
+          </div>`;
+productsGrid.appendChild(div);
+}
+    </script>
+    
+</body>
+
+</html>
